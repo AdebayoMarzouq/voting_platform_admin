@@ -38,12 +38,12 @@ function PositionLayout({ position, candidates }) {
 
 	return (
 		<div className='flex flex-col'>
-			<div className='relative px-2 py-4 bg-gray-100 md:px-4'>
-				<h2 className='text-2xl text-left underline'>
+			<div className='flex flex-col md:flex-row gap-2 px-2 py-4 bg-gray-100 md:px-4'>
+				<h2 className='text-xl text-left'>
 					{position.position_name}
 				</h2>
 				<button
-					className='absolute inline-flex items-center px-2 py-0.5 text-sm font-medium text-center border border-gray-400 rounded-lg transform -translate-y-1/2 right-4 top-1/2 text-light-text-primary hover:bg-red-600 hover:border-red-600 hover:text-white focus:ring-4 focus:outline-none focus:ring-gray-200 tracking'
+					className='w-fit ml-auto inline-flex items-center px-2 py-0.5 text-sm font-medium text-center border border-gray-400 rounded-lg text-light-text-primary hover:bg-red-600 hover:border-red-600 hover:text-white focus:ring-4 focus:outline-none focus:ring-gray-200 tracking'
 					onClick={handlePositionDelete}
 				>
 					Remove

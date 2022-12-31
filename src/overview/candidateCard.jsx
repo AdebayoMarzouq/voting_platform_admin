@@ -35,7 +35,7 @@ function CandidateLayout({ candidate }) {
 				}
 				alt='profile'
 			/>
-			<div className='flex flex-col items-start justify-center flex-grow'>
+			<div className='flex flex-col items-start justify-center text-left flex-grow'>
 				<h5 className='mb-1 text-xl font-medium text-light-text-primary'>
 					{candidate_name ||
 						"No candidate name available"}
@@ -47,7 +47,7 @@ function CandidateLayout({ candidate }) {
 					{candidate_level + " "}level
 				</span>
 			</div>
-			<div className='flex flex-col gap-1 ml-auto'>
+			<div className='flex flex-col gap-1 ml-auto shrink-0'>
 				<div className='text-center text-light-text-muted'>
 					<span className='font-semibold'>
 						Votes:

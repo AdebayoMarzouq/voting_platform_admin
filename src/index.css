@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 @layer base {
-    *html {
+    * {
         box-sizing: border-box;
     }
     :root {
@@ -26,5 +26,9 @@
         -moz-osx-font-smoothing: grayscale;
         -webkit-text-size-adjust: 100%;
         font-family: "Lora", sans-serif;
+    }
+
+    #root {
+        @apply max-w-5xl mx-auto border-x;
     }
 }
